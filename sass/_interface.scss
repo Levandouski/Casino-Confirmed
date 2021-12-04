@@ -1,0 +1,121 @@
+// USER VARIABLES SECTION
+
+$accent: #f9d93b; // Accent Color
+$textcolor: #ffffff; // Text Color
+$darkBlue: #1d1e2f;
+$lightBlue: #737a9e;
+$grey: #8a8a9c;
+
+$fontsize: 14px; // Body Font Size
+
+// Bootstrap compatible gutter variable => $gutter
+$default_font: 'Gilroy';
+$titles_font: 'DINPro';
+$titles_font_span: 'DINProBold';
+$bold: 'GilroyBold';
+$extraBold: 'GilroyExtraBold';
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    // font-display: swap // Uncomment to initially display system fonts
+    src: local($fname), url($furl) format('woff2');
+  }
+}
+
+@include font('Gilroy', normal, 300, '../fonts/Gilroy/Gilroy-Regular.ttf');
+@include font('GilroyBold', normal, 300, '../fonts/Gilroy/Gilroy-Bold.ttf');
+@include font(
+  'GilroyExtraBold',
+  normal,
+  300,
+  '../fonts/Gilroy/Gilroy-ExtraBold.ttf'
+);
+@include font(
+  'DINPro',
+  normal,
+  300,
+  '../fonts/DINPro/din-pro-condensed-light.ttf'
+);
+@include font(
+  'DINProBold',
+  normal,
+  300,
+  '../fonts/DINPro/DINPro-CondensedBold.ttf'
+);
+
+// GENERAL DOCUMENT STYLES
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: $default_font;
+  font-size: $fontsize;
+  position: relative;
+  color: $textcolor;
+  &.stop {
+    overflow: hidden;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.obj--480,
+.obj--750,
+.obj--970,
+.obj--pc {
+  display: none;
+}
+
+@media (min-width: 480px) {
+  .obj--mob {
+    display: none;
+  }
+  .obj--480 {
+    display: block;
+  }
+}
+
+@media (min-width: 750px) {
+  .obj--480 {
+    display: none;
+  }
+  .obj--750 {
+    display: block;
+  }
+}
+
+@media (min-width: 970px) {
+  .obj--750 {
+    display: none;
+  }
+  .obj--970 {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .obj--970 {
+    display: none;
+  }
+  .obj--pc {
+    display: block;
+  }
+}
+
+@import 'elements/links';
+@import 'elements/titles';

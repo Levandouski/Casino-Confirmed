@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="RU">
+  <head>
+    <meta charset="utf-8" />
+    <title>Подтверждение подписки</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Игровые автоматы" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <meta property="og:image" content="./img/preview.jpg" />
+
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/front.css" />
+  </head>
+  <body>
+    <!-- Экран подтверждения подписки -->
+    <div class="subconfirm-screen">
+      <div class="container">
+        <div class="subconfirm-screen__wrap">
+  
+          <div class="subconfirm-screen__decoration">
+
+            <img src="./img/light-bg.png" class="subconfirm-screen__decoration-lightbg" alt="light-bg">
+            <img src="./img/light-wheel.png" class="subconfirm-screen__decoration-lightwheel" alt="light-wheel">
+            <img src="./img/box.png" class="subconfirm-screen__decoration-box" alt="box">
+            <img src="./img/alphabet-bg.png" class="subconfirm-screen__decoration-alphabet" alt="alphabet">
+            <img src="./img/coins.png" class="subconfirm-screen__decoration-coins" alt="coins">
+            <img src="./img/wheel.png" class="subconfirm-screen__decoration-wheel" alt="wheel">
+            <img src="./img/man.png" class="subconfirm-screen__decoration-man" alt="man">
+
+          </div>
+  
+          <div class="subconfirm-screen__content">
+            <h1 class="subconfirm-screen__title">ВАЖНО! <span>ВЫ ДОЛЖНЫ</span> <br>
+              <span>АКТИВИРОВАТЬ ПОДПИСКУ!</span>
+            </h1>
+  
+            <div class="subconfirm-screen__text">
+              <picture class="subconfirm-screen__text-letter obj--mob">
+                <source srcset="./img/letter-320.webp" type="image/webp">
+                <img src="./img/letter-320.png" alt="Письмо" title="Письмо">
+              </picture>
+  
+              <picture class="subconfirm-screen__text-letter obj--480 obj--750 obj--970 obj--pc">
+                <source srcset="./img/letter.webp" type="image/webp">
+                <img src="./img/letter.png" alt="Письмо" title="Письмо">
+              </picture>
+              <h3>Зайдите на ваш почтовый ящик</h3>
+              <p>Найдите там специальное письмо <br>для подтверждения подписки</p>
+            </div>
+
+            <div class="subconfirm-screen__text" id="subconfirm-screen__check">
+              <picture class="subconfirm-screen__text-check obj--mob">
+                <source srcset="./img/check-320.webp" type="image/webp">
+                <img src="./img/check-320.png" alt="Галочка" title="Галочка">
+              </picture>
+  
+              <picture class="subconfirm-screen__text-check obj--480 obj--750 obj--970 obj--pc">
+                <source srcset="./img/check.webp" type="image/webp">
+                <img src="./img/check.png" alt="Галочка" title="Галочка">
+              </picture>
+              <h3>В этом письме перейдите по ссылке</h3>
+              <p>Тем самым вы активируете подписку <br>и получите инструкцию о получении бонусов</p>
+              
+            </div>
+            <div class="subconfirm-screen__content-links">
+              <p>Для входа можете использовать ссылки:</p>
+              <div class="subconfirm-screen__content-linkblocks">
+                <div class="subconfirm-screen__content-linkblock" id="link-on-top">
+                  <a href="#">
+                    <picture class="subconfirm-screen__link obj--mob">
+                      <source srcset="./img/yandex-320.webp" type="image/webp">
+                      <img src="./img/yandex-320.png" alt="Письмо" title="Письмо">
+                    </picture>
+        
+                    <picture class="subconfirm-screen__link obj--480 obj--750 obj--970 obj--pc">
+                      <source srcset="./img/yandex.webp" type="image/webp">
+                      <img src="./img/yandex.png" alt="Письмо" title="Письмо">
+                    </picture>
+                  </a>
+                </div>
+                <div class="subconfirm-screen__content-linkblock" id="link-on-top">
+                  <a href="#">
+                    <picture class="subconfirm-screen__link obj--mob">
+                      <source srcset="./img/Google-320.webp" type="image/webp">
+                      <img src="./img/Google-320.png" alt="Google" title="Google">
+                    </picture>
+
+                    <picture class="subconfirm-screen__link obj--480 obj--750 obj--970 obj--pc">
+                    <source srcset="./img/Google.webp" type="image/webp">
+                    <img src="./img/Google.png" alt="Google" title="Google">
+                    </picture>
+                  </a>
+                </div>
+                <div class="subconfirm-screen__content-linkblock" id="link-on-bottom">
+                  <a href="#">
+                    <picture class="subconfirm-screen__link obj--mob">
+                      <source srcset="./img/Mail-320.webp" type="image/webp">
+                      <img src="./img/Mail-320.png" alt="Мэйл" title="Мэйл">
+                    </picture>
+
+                    <picture class="subconfirm-screen__link obj--480 obj--750 obj--970 obj--pc">
+                    <source srcset="./img/Mail.webp" type="image/webp">
+                    <img src="./img/Mail.png" alt="Мэйл" title="Мэйл">
+                    </picture>
+                  </a>
+                </div>
+                <div class="subconfirm-screen__content-linkblock" id="link-on-bottom">
+                  <a href="#">
+                    <picture class="subconfirm-screen__link obj--mob">
+                      <source srcset="./img/Rambler-320.webp" type="image/webp">
+                      <img src="./img/Rambler-320.png" alt="Рамблер" title="Рамблер">
+                    </picture>
+
+                    <picture class="subconfirm-screen__link obj--480 obj--750 obj--970 obj--pc">
+                    <source srcset="./img/Rambler.webp" type="image/webp">
+                    <img src="./img/Rambler.png" alt="Рамблер" title="Рамблер">
+                    </picture>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="subconfirm-screen__text-spam">
+              <picture class="subconfirm-screen__text-letter obj--mob" id="spam-icon">
+                <source srcset="./img/spam-320.webp" type="image/webp">
+                <img src="./img/spam-320.png" alt="Спам" title="Спам">
+              </picture>
+  
+              <picture class="subconfirm-screen__text-letter obj--480 obj--750 obj--970 obj--pc" id="spam-icon">
+                <source srcset="./img/spam.webp" type="image/webp">
+                <img src="./img/spam.png" alt="Спам" title="Спам">
+              </picture>
+              
+              <p>Если письмо НЕ ПРИШЛО, <span>проверьте папку «Спам».</span> Если и это не помогло, <a class="btn--modal btn--modal-privacy" href="#">оформите подписку повторно.</a></p>
+              
+            </div>
+            <div class="btn_privacy"><a href="#" class="btn--modal btn--modal-privacy">Политика конфиденциальности</a>
+            </div>
+            
+            
+      </div>
+    </div>
+    <!-- Модальное окно -->
+    <div class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-window modal-window--privacy">
+        <h3 class="modal-window__title">Политика конфиденциальности</h3>
+        <p class="modal-window__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex ab voluptas reprehenderit adipisci! Veniam ad impedit temporibus atque rem, amet fugiat voluptas pariatur reprehenderit!</p>
+        <p class="modal-window__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex ab voluptas reprehenderit adipisci! Veniam ad impedit temporibus atque rem, amet fugiat voluptas pariatur reprehenderit!</p>
+        <p class="modal-window__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex ab voluptas reprehenderit adipisci! Veniam ad impedit temporibus atque rem, amet fugiat voluptas pariatur reprehenderit!</p>
+        <p class="modal-window__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex ab voluptas reprehenderit adipisci! Veniam ad impedit temporibus atque rem, amet fugiat voluptas pariatur reprehenderit!</p>
+        <p class="modal-window__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex ab voluptas reprehenderit adipisci! Veniam ad impedit temporibus atque rem, amet fugiat voluptas pariatur reprehenderit!</p>
+        <p class="modal-window__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex ab voluptas reprehenderit adipisci! Veniam ad impedit temporibus atque rem, amet fugiat voluptas pariatur reprehenderit!</p>
+        <p class="modal-window__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex ab voluptas reprehenderit adipisci! Veniam ad impedit temporibus atque rem, amet fugiat voluptas pariatur reprehenderit!</p>
+        <p class="modal-window__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex ab voluptas reprehenderit adipisci! Veniam ad impedit temporibus atque rem, amet fugiat voluptas pariatur reprehenderit!</p>
+        <p class="modal-window__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex ab voluptas reprehenderit adipisci! Veniam ad impedit temporibus atque rem, amet fugiat voluptas pariatur reprehenderit!</p>
+      </div>
+
+    </div>
+  </body>
+</html>
